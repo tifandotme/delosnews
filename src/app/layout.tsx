@@ -1,6 +1,6 @@
+import { Providers } from "@/app/providers"
 import { fonts } from "@/lib/fonts"
 import type { Metadata } from "next"
-import { ThemeProvider } from "next-themes"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -12,13 +12,9 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={fonts.map((font) => font.variable).join(" ")}>
-        <ThemeProvider
-          disableTransitionOnChange
-          enableSystem={false}
-          attribute="class"
-        >
+        <Providers>
           {children}
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   )
