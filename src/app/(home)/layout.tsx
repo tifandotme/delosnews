@@ -1,4 +1,5 @@
-import { MobileMenu } from "@/app/(home)/mobile-menu"
+import { ShinyText } from "@/app/(home)/shiny-text"
+import { StickyHeader } from "@/app/(home)/sticky-header"
 import { ThemeSwitcher } from "@/app/(home)/theme-switcher"
 import { buttonVariants } from "@/components/ui/button"
 import { NAV_LINKS } from "@/lib/constants"
@@ -9,37 +10,53 @@ import Link from "next/link"
 export default function HomeLayout({ children }: React.PropsWithChildren) {
   return (
     <>
-      <header className="fixed inset-x-0 top-0 flex h-[var(--header-height)] items-center justify-between bg-background/50 px-6 backdrop-blur-md">
-        <Link href="/">
-          <h1 className="inline-flex h-10 items-center gap-1 font-serif text-2xl font-semibold hover:text-foreground/80">
-            <Origami size={19} strokeWidth={2.2} aria-hidden="true" />
-            <span className="translate-y-0.5 tracking-tight">Delosnews</span>
-          </h1>
-        </Link>
-        <ul className="flex gap-2 max-sm:hidden">
-          {NAV_LINKS.map(({ href, label }) => (
-            <li
-              className="inline-flex h-10 items-center font-medium"
-              key={href}
-            >
+      <header className="h-[var(--masthead-height)] bg-muted dark:bg-muted/20 max-masthead:hidden">
+        <div className="kontainer grid h-full grid-cols-3 items-center">
+          <ThemeSwitcher className="justify-self-start [&>svg]:size-5" />
+
+          <Link className="justify-self-center" href="/">
+            <h1 className="inline-flex select-none items-center gap-0.5 font-serif text-5xl font-semibold leading-none tracking-tight hover:text-foreground/80">
+              <span>Delos</span>
+              <Origami
+                className="-translate-y-1.5"
+                size="0.9em"
+                strokeWidth={2.1}
+                aria-hidden="true"
+              />
+              <span className="text-red-600 dark:text-red-400">news</span>
+            </h1>
+          </Link>
+
+          <div className="w-fit space-x-5 justify-self-end uppercase tracking-tight">
+            {NAV_LINKS.map(({ href, label }) => (
               <Link
+                key={href}
                 className={cn(
                   buttonVariants({
                     variant: "link",
-                    className: "px-1",
+                    className: "px-0",
                   }),
                 )}
                 href={href}
               >
-                {label}
+                {href === "/lucky" ?
+                  <ShinyText>{label}</ShinyText>
+                : label}
               </Link>
-            </li>
-          ))}
-          <ThemeSwitcher />
-        </ul>
-        <MobileMenu />
+            ))}
+          </div>
+        </div>
       </header>
+
+      <StickyHeader />
+
       {children}
+
+      <footer className="mt-6 bg-muted dark:bg-muted/20">
+        <div className="kontainer flex justify-center py-10">
+          <Origami size="1.5rem" strokeWidth={2.1} aria-label="Delosnews" />
+        </div>
+      </footer>
     </>
   )
 }
