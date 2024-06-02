@@ -6,6 +6,9 @@ const config = {
       fullUrl: true,
     },
   },
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "static01.nyt.com" }],
+  },
 }
 
 export default config
