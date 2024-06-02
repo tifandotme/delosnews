@@ -1,4 +1,11 @@
 export const NAV_LINKS = [
-  { href: "/articles/owned", label: "Your Articles" },
-  { href: "/articles/owned2", label: "Lucky Coin" },
+  { href: "/articles/owned", label: "Purchased Articles" },
+  { href: "/lucky", label: "Lucky Coin" },
 ]
+
+export const FILTERS = ["emailed", "shared", "viewed"] as const
+
+/**
+ * Articles per pagination
+ */
+export const PER_PAGE = 5
