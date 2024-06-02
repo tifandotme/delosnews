@@ -5,11 +5,7 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 
-interface ThemeSwitcherProps extends React.HTMLAttributes<HTMLButtonElement> {
-  className?: string
-}
-
-export function ThemeSwitcher(props: ThemeSwitcherProps) {
+export function ThemeSwitcher(props: React.HTMLAttributes<HTMLButtonElement>) {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
