@@ -73,6 +73,15 @@
   body {
     @apply min-h-screen bg-background font-sans text-foreground antialiased;
 
-    --header-height: 80px;
+    --masthead-height: 128px;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply md:container max-lg:px-4;
+  }
+  .animate-translate {
+    @apply transition-transform duration-200 hover:-translate-y-px;
   }
 }
