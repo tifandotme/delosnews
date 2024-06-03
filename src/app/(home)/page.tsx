@@ -11,7 +11,6 @@ export default function Home() {
     queryKey: ["articles", null, null],
     queryFn: async () => {
       const data = await getArticles("emailed")
-      console.log("data", data.length)
       return data.slice(0, PER_PAGE)
     },
     initialPageParam: 0,

@@ -23,7 +23,6 @@ async function getArticleById(articleId: string, isInteractive: boolean) {
   }
 
   const json: Response = await res.json()
-  console.log("JSON", json)
   return json.response.docs[0] as Definitions["Article"] | undefined
 }
 
@@ -39,7 +38,6 @@ export default async function Article({
     searchParams.type === "interactive",
   )
   if (!article) {
-    console.log("FOO")
     notFound()
   }
 
