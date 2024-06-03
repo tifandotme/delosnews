@@ -1,6 +1,10 @@
 "use client"
 
 import { getArticles } from "@/app/(home)/actions"
+import {
+  ArticleCard,
+  ArticleSkeleton,
+} from "@/components/articles/article-card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
@@ -10,11 +14,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { Skeleton } from "@/components/ui/skeleton"
 import { useDebounce } from "@/hooks/use-debounce"
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { FILTERS, PER_PAGE } from "@/lib/constants"
-import { cn, toSentenceCase } from "@/lib/utils"
+import { cn, constructArticleHref, toSentenceCase } from "@/lib/utils"
 import * as SelectPrimitive from "@radix-ui/react-select"
 import { useSuspenseInfiniteQuery } from "@tanstack/react-query"
 import { Filter, Search } from "lucide-react"
@@ -23,12 +26,9 @@ import Link from "next/link"
 import { parseAsStringLiteral, useQueryState } from "nuqs"
 import { useRef } from "react"
 
-export function Articles({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
+export function Articles() {
   const [search, setSearch] = useQueryState("search")
-  const debouncedSearch = useDebounce(search, 500)
+  const debouncedSearch = useDebounce(search)
   const [filter, setFilter] = useQueryState(
     "filter",
     parseAsStringLiteral(FILTERS),
@@ -75,24 +75,20 @@ export function Articles({
     enabled: !isFetchingNextPage && hasNextPage,
   })
 
+  const inputSearchRef = useRef<HTMLInputElement>(null)
+
   if (status === "error") return <div>Error: {error?.message}</div>
   const articles = data?.pages.flatMap((page) => page)
 
   return (
-    <div
-      className={cn(
-        "container-main min-h-[calc(100vh-var(--masthead-height))] pt-14",
-        className,
-      )}
-      {...props}
-    >
+    <>
       <div className="mb-14 flex w-full items-center justify-center gap-2">
         <div className="relative w-full max-w-[500px]">
           <Input
+            ref={inputSearchRef}
             className="peer border-0 border-b-2 focus-visible:border-foreground focus-visible:ring-0"
             type="text"
             onChange={(e) => setSearch(e.target.value ? e.target.value : null)}
-            value={search ?? ""}
           />
           <Search
             strokeWidth={2.5}
@@ -108,7 +104,12 @@ export function Articles({
             )}
             variant="unstyled"
             type="button"
-            onClick={() => setSearch(null)}
+            onClick={() => {
+              setSearch(null)
+              if (inputSearchRef.current) {
+                inputSearchRef.current.value = ""
+              }
+            }}
           >
             Clear
           </Button>
@@ -130,27 +131,28 @@ export function Articles({
             </SelectValue>
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="emailed">Most Emailed</SelectItem>
-            <SelectItem value="shared">Most Shared</SelectItem>
-            <SelectItem value="viewed">Most Viewed</SelectItem>
+            {FILTERS.map((f) => (
+              <SelectItem key={f} value={f}>
+                Most {toSentenceCase(f)}
+              </SelectItem>
+            ))}
           </SelectContent>
         </Select>
       </div>
+
       <ul className="flex flex-col gap-6">
         {articles.length === 0 ?
-          <li className="text-center text-muted-foreground">
+          <li className="my-20 text-center text-muted-foreground">
             No articles found.
           </li>
         : articles.map((article) => {
             const media = article.media[0]?.["media-metadata"] ?? []
             const imageUrl = media[media.length - 1]?.url
-            const uri = article.uri
-            const articleId = uri.slice(uri.lastIndexOf("/") + 1)
             return (
               <Link
                 key={article.id}
                 className="group block"
-                href={`/${articleId}`}
+                href={constructArticleHref(article.uri, article.type)}
               >
                 <ArticleCard className="sm:animate-translate sm:hover:border-neutral-300 sm:hover:bg-muted/20 dark:sm:hover:border-neutral-700/60">
                   <div className="flex w-full flex-col">
@@ -184,39 +186,9 @@ export function Articles({
       </ul>
       <div ref={loadMoreRef} className={cn(!hasNextPage && "hidden")} />
       {isFetchingNextPage &&
-        Array.from({ length: PER_PAGE }).map((_, i) => <ArticleSkeleton key={i} />)}
-    </div>
-  )
-}
-
-function ArticleCard({
-  children,
-  className,
-  ...props
-}: React.HTMLProps<HTMLLIElement>) {
-  return (
-    <article
-      className={cn(
-        "max-sm flex justify-between gap-2 border-b bg-card pb-6 text-card-foreground max-sm:flex-col max-sm:group-last:border-b-0 sm:h-[300px] sm:border sm:p-6 sm:shadow-sm",
-        className,
-      )}
-      {...props}
-    >
-      {children}
-    </article>
-  )
-}
-
-function ArticleSkeleton() {
-  return (
-    <ArticleCard className="!border-0 !shadow-none">
-      <div className="flex w-full flex-col">
-        <Skeleton className="h-5 w-[10ch]" />
-        <Skeleton className="h-9 w-full" />
-        <Skeleton className="mt-1 h-5 w-full" />
-        <Skeleton className="mt-1 h-5 w-[70%]" />
-      </div>
-      <Skeleton className="aspect-square h-full w-auto shrink-0 object-cover lg:aspect-[16/10]" />
-    </ArticleCard>
+        Array.from({ length: PER_PAGE }).map((_, i) => (
+          <ArticleSkeleton key={i} />
+        ))}
+    </>
   )
 }
