@@ -3,7 +3,7 @@
 import type { FILTERS } from "@/lib/constants"
 import type { Response } from "@/types/most-popular"
 
-const FETCH_DELAY = process.env.FETCH_DELAY as string
+const FETCH_DELAY = (process.env.FETCH_DELAY as string) || 0
 
 /**
  * Server action to fetch articles from the NYT API. Error is handled by React Query hook.
