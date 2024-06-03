@@ -1,4 +1,4 @@
-import { ShinyText } from "@/app/(home)/shiny-text"
+import { ShinyText } from "@/components/animated/shiny-text"
 import { StickyHeader } from "@/app/(home)/sticky-header"
 import { ThemeSwitcher } from "@/app/(home)/theme-switcher"
 import { buttonVariants } from "@/components/ui/button"

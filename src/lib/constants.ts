@@ -1,5 +1,5 @@
 export const NAV_LINKS = [
-  { href: "/articles/owned", label: "Purchased Articles" },
+  { href: "/purchased", label: "Purchased Articles" },
   { href: "/lucky", label: "Lucky Coin" },
 ]
 

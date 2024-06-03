@@ -1,6 +1,6 @@
 "use client"
 
-import { ShinyText } from "@/app/(home)/shiny-text"
+import { ShinyText } from "@/components/animated/shiny-text"
 import { ThemeSwitcher } from "@/app/(home)/theme-switcher"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { NAV_LINKS } from "@/lib/constants"
