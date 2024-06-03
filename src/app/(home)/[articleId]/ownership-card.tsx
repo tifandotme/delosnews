@@ -76,7 +76,7 @@ export function OwnershipCard({ article }: OwnershipCardProps) {
         : <BuyButton
             price={price}
             onConfirm={() => {
-              updateCoins(-coins)
+              updateCoins(-price)
               addPurchasedArticles(article)
               if (price >= 50000) {
                 toast("Congratulations! You received 3 Lucky Coins tickets")
