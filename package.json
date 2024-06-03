@@ -4,12 +4,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest run --coverage"
   },
   "dependencies": {
+    "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-slot": "^1.0.2",
@@ -17,37 +19,40 @@
     "@tanstack/react-query-devtools": "^5.40.0",
     "class-variance-authority": "^0.7.0",
     "framer-motion": "^11.2.10",
-    "lucide-react": "^0.381.0",
-    "next": "15.0.0-canary.5",
+    "lucide-react": "^0.383.0",
+    "next": "^14.2.3",
     "next-themes": "^0.3.0",
     "nuqs": "^1.17.4",
-    "react": "19.0.0-rc-38e3b23483-20240529",
-    "react-dom": "19.0.0-rc-38e3b23483-20240529",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-use": "^17.5.0",
+    "sonner": "^1.4.41",
     "tailwind-merge": "^2.3.0",
     "zustand": "^4.5.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
     "@types/node": "^20",
-    "@types/react": "npm:types-react@rc",
-    "@types/react-dom": "npm:types-react-dom@rc",
-    "@typescript-eslint/eslint-plugin": "^7.11.0",
-    "@typescript-eslint/parser": "^7.11.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
+    "@typescript-eslint/parser": "^7.12.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "@vitest/coverage-v8": "^1.6.0",
     "eslint": "^8",
     "eslint-config-next": "^14.2.3",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-tailwindcss": "^3.17.0",
+    "jsdom": "^24.1.0",
+    "msw": "^2.3.1",
     "postcss": "^8",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.0",
     "prettier-plugin-tailwindcss": "^0.6.1",
     "tailwindcss": "^3.4.3",
-    "typescript": "^5"
-  },
-  "overrides": {
-    "react": "19.0.0-rc-38e3b23483-20240529",
-    "react-dom": "19.0.0-rc-38e3b23483-20240529",
-    "@types/react": "npm:types-react@rc",
-    "@types/react-dom": "npm:types-react-dom@rc"
+    "typescript": "^5",
+    "vitest": "^1.6.0"
   },
   "engines": {
     "node": ">=20.0.0"
