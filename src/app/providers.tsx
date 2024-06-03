@@ -1,5 +1,6 @@
 "use client"
 
+import { NProgressProvider } from "@/app/nprogress"
 import { Toaster } from "@/components/ui/sonner"
 import { getQueryClient } from "@/lib/react-query"
 import { QueryClientProvider } from "@tanstack/react-query"
@@ -19,7 +20,7 @@ export function Providers({ children }: React.PropsWithChildren) {
         enableSystem={false}
         attribute="class"
       >
-        {children}
+        <NProgressProvider>{children}</NProgressProvider>
         <Toaster />
       </ThemeProvider>
       <ReactQueryDevtools initialIsOpen={false} />
