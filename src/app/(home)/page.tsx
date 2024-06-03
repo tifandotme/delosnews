@@ -18,8 +18,10 @@ export default function Home() {
   })
 
   return (
-    <HydrationBoundary state={dehydrate(queryClient)}>
-      <Articles className="max-masthead:mt-28" />
-    </HydrationBoundary>
+    <div className="container-main min-h-[calc(100vh-var(--masthead-height))] pt-14 max-masthead:mt-28">
+      <HydrationBoundary state={dehydrate(queryClient)}>
+        <Articles />
+      </HydrationBoundary>
+    </div>
   )
 }
