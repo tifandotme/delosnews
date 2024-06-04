@@ -36,10 +36,7 @@ export function Articles() {
               <div className="flex items-center gap-2">
                 <Link
                   className={cn(buttonVariants({ variant: "outline" }))}
-                  href={constructArticleHref(
-                    article.uri,
-                    article.document_type,
-                  )}
+                  href={constructArticleHref(article.uri)}
                 >
                   Detail
                 </Link>

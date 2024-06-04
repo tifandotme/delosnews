@@ -58,12 +58,13 @@ export default async function Article({
             {article.headline.main}
           </h2>
           <p className="font-serif text-xl italic">{article.abstract}</p>
-          <time
-            className="mt-4 inline-block text-sm text-muted-foreground"
-            dateTime={article.pub_date}
-          >
-            {publishedDate} ({formatRelativeDate(article.pub_date)})
-          </time>
+          <div className="mt-4 inline-block text-sm text-muted-foreground">
+            <span>{article.byline.original}</span>
+            <span className="mx-2 text-xs">&bull;</span>
+            <time dateTime={article.pub_date}>
+              {publishedDate} ({formatRelativeDate(article.pub_date)})
+            </time>
+          </div>
         </div>
         {cover && (
           <figure className="mx-auto mt-10 max-w-screen-lg">
@@ -76,6 +77,7 @@ export default async function Article({
               priority
               fetchPriority="high"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 30vw"
+              aria-label="Cover"
             />
           </figure>
         )}

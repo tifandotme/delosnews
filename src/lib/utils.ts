@@ -62,9 +62,11 @@ export function formatRelativeDate(date: string) {
  *
  * The final href will look like `/{articleId}?type=interactive`.
  */
-export function constructArticleHref(uri: string, type: string) {
-  const articleId = uri.slice(uri.lastIndexOf("/") + 1)
+export function constructArticleHref(uri: string) {
+  const data = uri.split("/")
+  const type = data[data.length - 2]
+  const articleId = data[data.length - 1]
   const queryParams =
-    type.toLowerCase() === "interactive" ? "?type=interactive" : ""
+    type!.toLowerCase() === "interactive" ? "?type=interactive" : ""
   return `/${articleId}${queryParams}`
 }

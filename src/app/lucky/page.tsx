@@ -98,7 +98,7 @@ export default function LuckyCoin() {
           className="cursor-default text-center drop-shadow-lg"
         />
         <p className="mt-2 font-medium text-muted-foreground">
-          Draw a lucky coin to to earn rewards!
+          Draw a lucky coin to earn rewards!
         </p>
         <Card
           className={cn(

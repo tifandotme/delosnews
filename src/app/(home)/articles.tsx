@@ -171,7 +171,7 @@ export function Articles({ initialSearchParams }: ArticlesProps) {
                 key={article.id}
                 data-testid={`article-${article.id}`}
                 className="group block"
-                href={constructArticleHref(article.uri, article.type)}
+                href={constructArticleHref(article.uri)}
               >
                 <ArticleCard className="sm:animate-translate sm:hover:border-neutral-300 sm:hover:bg-muted/20 dark:sm:hover:border-neutral-700/60">
                   <div className="flex w-full flex-col">
