@@ -1,11 +1,12 @@
 # Delosnews
 
-Next.js application
+Next.js application that integrates with the New York Times API to display a list of articles. Users can view article details, purchase articles, and also play a minigame to earn rewards!
 
 **Deployed at: [delosnews.tifan.me](https://delosnews.tifan.me/)**
 
 ## Table of Contents
 
+- [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the Application](#running-the-application)
@@ -13,7 +14,7 @@ Next.js application
 
 ## Overview
 
-There is no authentication. Data unique to your usage such as your balance or purchased articles are stored in the browser's local storage.
+There is no authentication. Data unique to your usage such as your balance or purchased articles are stored in the browser's local storage. To reset your balance or purchased articles, you can delete the local site data.
 
 ### Routes
 
@@ -31,7 +32,20 @@ Routes available in the application are as follows:
 The application uses the following environment variables:
 
 - `API_KEY`: Provide your own New York Times API key if you want to run this application locally.
-- `FETCH_DELAY` (optional): The delay in ms to simulate fetching data from the API.
+- `FETCH_DELAY` (optional): Simulate a fetch delay in "/" route. This is useful for testing the loading state during infinite scrolling. Default is 0.
+
+### Lucky Coin Minigame
+
+The Lucky Coin minigame is a simple game where you can draw or "flip a coin" to earn rewards. The cost of entering a round is 3 tickets. For each round, you can draw 3 times.
+
+The prizes are as follows:
+
+- 50000 coins (max 1 per round)
+- 20000 coins
+- 1 ticket
+- A try again
+
+You can earn 3 tickets for each purchase of an article with a minimum price of 50000.
 
 ## Prerequisites
 
@@ -45,6 +59,7 @@ Ensure that you have **Node.js v20** or above installed on your local machine.
 npm install
 ```
 
+> [!NOTE]
 > Feel free to use an alternative package manager of your choice. (bun, yarn, etc)
 
 2. Create a `.env.local` file by copying the example file:
