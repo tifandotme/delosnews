@@ -16,7 +16,6 @@ const config = {
       provider: "v8",
       exclude: [
         ...configDefaults.exclude,
-        "**/app/**",
         "**/mocks/**",
         "**/types/**",
         "**/providers.tsx",

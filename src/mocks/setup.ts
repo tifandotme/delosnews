@@ -1,8 +1,6 @@
 import { QueryCache } from "@tanstack/react-query"
-
-import { server } from "./server"
-
 import "@testing-library/jest-dom"
+import { server } from "./server"
 
 const queryCache = new QueryCache()
 

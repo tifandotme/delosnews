@@ -60,7 +60,7 @@ export function Articles({ initialSearchParams }: ArticlesProps) {
      * Ideally, search and pagination should be handled by the API server.
      * But, since NYT Most Popular API doesn't support this, we have to do it on the client.
      *
-     * Additionally, API only gives us 20 articles at most regardless of the filter option.
+     * Also keep in mind that the API only gives us 20 articles at most regardless of the filter option.
      */
     queryFn: async ({ pageParam }) => {
       const data = await getArticles(filter)
@@ -101,6 +101,7 @@ export function Articles({ initialSearchParams }: ArticlesProps) {
             ref={inputSearchRef}
             className="peer border-0 border-b-2 focus-visible:border-foreground focus-visible:ring-0"
             type="text"
+            aria-label="Search"
             onChange={(e) => setSearch(e.target.value ? e.target.value : null)}
           />
           <Search
@@ -152,11 +153,13 @@ export function Articles({ initialSearchParams }: ArticlesProps) {
       </div>
 
       <ul className="flex flex-col gap-6">
-        {isFetching ?
+        {!isFetchingNextPage &&
+          isFetching &&
           Array.from({ length: PER_PAGE }).map((_, i) => (
             <ArticleSkeleton key={i} />
-          ))
-        : articles.length === 0 ?
+          ))}
+
+        {!isFetching && articles.length === 0 ?
           <li className="my-20 text-center text-muted-foreground">
             No articles found.
           </li>
@@ -200,6 +203,7 @@ export function Articles({ initialSearchParams }: ArticlesProps) {
           })
         }
       </ul>
+
       <div ref={loadMoreRef} className={cn(!hasNextPage && "hidden")} />
       {isFetchingNextPage &&
         Array.from({ length: PER_PAGE }).map((_, i) => (

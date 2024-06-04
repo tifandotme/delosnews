@@ -1,11 +1,10 @@
+import { Toaster } from "@/components/ui/sonner"
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { render, type RenderOptions } from "@testing-library/react"
 import {
   AppRouterContext,
   type AppRouterInstance,
 } from "next/dist/shared/lib/app-router-context.shared-runtime"
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import { render, type RenderOptions } from "@testing-library/react"
-
-import { Toaster } from "@/components/ui/sonner"
 
 /**
  * Wraps the component in providers that are required for the tests.
@@ -44,3 +43,4 @@ function customRender(ui: React.ReactElement, options?: RenderOptions) {
 export * from "@testing-library/react"
 export { default as userEvent } from "@testing-library/user-event"
 export { customRender as render }
+

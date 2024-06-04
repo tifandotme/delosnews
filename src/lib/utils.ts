@@ -38,7 +38,6 @@ export function formatRelativeDate(date: string) {
   ]
 
   let duration = (new Date(date).getTime() - new Date().getTime()) / 1000
-
   for (let i = 0; i < DIVISIONS.length; i++) {
     const division = DIVISIONS[i] as { amount: number; name: string }
     if (Math.abs(duration) < division.amount) {
@@ -54,6 +53,15 @@ export function formatRelativeDate(date: string) {
   return "a long time ago"
 }
 
+/**
+ * NYT's article URI format looks like `nyt://{type}/{articleId}`.
+ * `type` can be "article" or "interactive".
+ *
+ * In order to turn this information into a pathname that this application can read,
+ * we need to extract the `articleId` and add a query param if the type is "interactive".
+ *
+ * The final href will look like `/{articleId}?type=interactive`.
+ */
 export function constructArticleHref(uri: string, type: string) {
   const articleId = uri.slice(uri.lastIndexOf("/") + 1)
   const queryParams =
