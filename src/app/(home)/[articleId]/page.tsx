@@ -73,9 +73,9 @@ export default async function Article({
               width={0}
               height={0}
               alt={article.headline.main}
-              sizes="100vw"
-              loading="lazy"
-              unoptimized
+              priority
+              fetchPriority="high"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 30vw"
             />
           </figure>
         )}

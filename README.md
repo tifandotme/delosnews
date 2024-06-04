@@ -31,7 +31,7 @@ Routes available in the application are as follows:
 
 The application uses the following environment variables:
 
-- `API_KEY`: Provide your own New York Times API key if you want to run this application locally.
+- `API_KEY`: Provide your own New York Times API key if you want to run this application locally. Make sure you have enabled "Most Popular" and "Article Search" in your account API settings.
 - `FETCH_DELAY` (optional): Simulate a fetch delay in "/" route. This is useful for testing the loading state during infinite scrolling. Default is 0.
 
 ### Lucky Coin Minigame
@@ -99,3 +99,8 @@ To run the test suite and check the current test coverage report, use the follow
 ```bash
 npm run test
 ```
+
+> [!NOTE]  
+> `fetchPriority` warning appearing above coverage report is fixed in next.js and react canary version, which can be safely ignored
+> https://github.com/facebook/react/issues/27233
+> https://github.com/vercel/next.js/issues/65161
