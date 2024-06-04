@@ -26,15 +26,24 @@ import Link from "next/link"
 import { parseAsStringLiteral, useQueryState } from "nuqs"
 import { useRef } from "react"
 
-export function Articles() {
+interface ArticlesProps {
+  initialSearchParams?: {
+    search: string
+    filter: (typeof FILTERS)[number]
+  }
+}
+
+export function Articles({ initialSearchParams }: ArticlesProps) {
   const [search, setSearch] = useQueryState("search", {
-    defaultValue: "",
+    defaultValue: initialSearchParams?.search ?? "",
     clearOnDefault: true,
   })
   const debouncedSearch = useDebounce(search)
   const [filter, setFilter] = useQueryState(
     "filter",
-    parseAsStringLiteral(FILTERS).withDefault("emailed"),
+    parseAsStringLiteral(FILTERS).withDefault(
+      initialSearchParams?.filter ?? FILTERS[0],
+    ),
   )
 
   const {
@@ -44,6 +53,7 @@ export function Articles() {
     hasNextPage,
     isFetchingNextPage,
     status,
+    isFetching,
   } = useInfiniteQuery({
     queryKey: ["articles", filter, debouncedSearch],
     /**
@@ -53,7 +63,7 @@ export function Articles() {
      * Additionally, API only gives us 20 articles at most regardless of the filter option.
      */
     queryFn: async ({ pageParam }) => {
-      const data = await getArticles(filter ?? "emailed")
+      const data = await getArticles(filter)
       if (debouncedSearch) {
         return data.filter((article) =>
           article.title.toLowerCase().includes(debouncedSearch.toLowerCase()),
@@ -118,8 +128,8 @@ export function Articles() {
           </Button>
         </div>
         <Select
-          defaultValue="emailed"
-          value={filter ?? "emailed"}
+          defaultValue={FILTERS[0]}
+          value={filter}
           onValueChange={(val) => setFilter(val as (typeof FILTERS)[number])}
         >
           <SelectTrigger
@@ -129,9 +139,7 @@ export function Articles() {
             <SelectPrimitive.Icon asChild>
               <Filter strokeWidth={2.5} size="1rem" />
             </SelectPrimitive.Icon>
-            <SelectValue>
-              Most {toSentenceCase(filter ?? "emailed")}
-            </SelectValue>
+            <SelectValue>Most {toSentenceCase(filter)}</SelectValue>
           </SelectTrigger>
           <SelectContent>
             {FILTERS.map((f) => (
@@ -144,7 +152,11 @@ export function Articles() {
       </div>
 
       <ul className="flex flex-col gap-6">
-        {articles.length === 0 ?
+        {isFetching ?
+          Array.from({ length: PER_PAGE }).map((_, i) => (
+            <ArticleSkeleton key={i} />
+          ))
+        : articles.length === 0 ?
           <li className="my-20 text-center text-muted-foreground">
             No articles found.
           </li>
@@ -154,6 +166,7 @@ export function Articles() {
             return (
               <Link
                 key={article.id}
+                data-testid={`article-${article.id}`}
                 className="group block"
                 href={constructArticleHref(article.uri, article.type)}
               >
@@ -176,9 +189,9 @@ export function Articles() {
                       width={0}
                       height={0}
                       alt={article.media[0]?.caption ?? article.title}
-                      sizes="100vw"
-                      loading="lazy"
-                      unoptimized
+                      priority
+                      fetchPriority="high"
+                      sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 80vw, 60vw"
                     />
                   )}
                 </ArticleCard>
