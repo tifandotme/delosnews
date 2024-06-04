@@ -19,7 +19,7 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { FILTERS, PER_PAGE } from "@/lib/constants"
 import { cn, constructArticleHref, toSentenceCase } from "@/lib/utils"
 import * as SelectPrimitive from "@radix-ui/react-select"
-import { useSuspenseInfiniteQuery } from "@tanstack/react-query"
+import { useInfiniteQuery } from "@tanstack/react-query"
 import { Filter, Search } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -27,11 +27,14 @@ import { parseAsStringLiteral, useQueryState } from "nuqs"
 import { useRef } from "react"
 
 export function Articles() {
-  const [search, setSearch] = useQueryState("search")
+  const [search, setSearch] = useQueryState("search", {
+    defaultValue: "",
+    clearOnDefault: true,
+  })
   const debouncedSearch = useDebounce(search)
   const [filter, setFilter] = useQueryState(
     "filter",
-    parseAsStringLiteral(FILTERS),
+    parseAsStringLiteral(FILTERS).withDefault("emailed"),
   )
 
   const {
@@ -41,7 +44,7 @@ export function Articles() {
     hasNextPage,
     isFetchingNextPage,
     status,
-  } = useSuspenseInfiniteQuery({
+  } = useInfiniteQuery({
     queryKey: ["articles", filter, debouncedSearch],
     /**
      * Ideally, search and pagination should be handled by the API server.
@@ -78,7 +81,7 @@ export function Articles() {
   const inputSearchRef = useRef<HTMLInputElement>(null)
 
   if (status === "error") return <div>Error: {error?.message}</div>
-  const articles = data?.pages.flatMap((page) => page)
+  const articles = data?.pages.flatMap((page) => page) ?? []
 
   return (
     <>

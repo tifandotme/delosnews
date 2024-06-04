@@ -1,14 +1,17 @@
 import { getArticles } from "@/app/(home)/actions"
 import { Articles } from "@/app/(home)/articles"
 import { PER_PAGE } from "@/lib/constants"
-import { getQueryClient } from "@/lib/react-query"
-import { HydrationBoundary, dehydrate } from "@tanstack/react-query"
+import {
+  HydrationBoundary,
+  QueryClient,
+  dehydrate,
+} from "@tanstack/react-query"
 
-export default function Home() {
+export default async function Home() {
   // Prefetch the first page of articles with "emailed" as initial filter
-  const queryClient = getQueryClient()
-  void queryClient.prefetchInfiniteQuery({
-    queryKey: ["articles", null, null],
+  const queryClient = new QueryClient()
+  await queryClient.prefetchInfiniteQuery({
+    queryKey: ["articles", "emailed", ""],
     queryFn: async () => {
       const data = await getArticles("emailed")
       return data.slice(0, PER_PAGE)

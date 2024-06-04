@@ -14,9 +14,7 @@ async function getArticleById(articleId: string, isInteractive: boolean) {
   )
   url.searchParams.set("api-key", process.env.API_KEY as string)
   const res = await fetch(url, {
-    next: {
-      revalidate: 3600,
-    },
+    cache: "force-cache",
   })
   if (!res.ok) {
     throw new Error("Failed to fetch article")

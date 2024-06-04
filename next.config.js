@@ -9,9 +9,6 @@ const config = {
   images: {
     remotePatterns: [{ protocol: "https", hostname: "static01.nyt.com" }],
   },
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
-  },
 }
 
 export default config
