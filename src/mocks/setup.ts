@@ -6,8 +6,17 @@ import "@testing-library/jest-dom"
 
 const queryCache = new QueryCache()
 
-const noop = () => {}
-Object.defineProperty(window, "scrollTo", { value: noop, writable: true })
+Object.defineProperty(window, "matchMedia", {
+  value: vi.fn().mockImplementation((query) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addEventListener: vi.fn(),
+    removeEventListener: vi.fn(),
+    dispatchEvent: vi.fn(),
+  })),
+  writable: true,
+})
 
 beforeAll(() => server.listen({ onUnhandledRequest: "error" }))
 afterAll(() => server.close())

@@ -1,0 +1,1171 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2024 The New York Times Company.  All Rights Reserved.",
+  "num_results": 20,
+  "results": [
+    {
+      "uri": "nyt://article/6796f5a6-6796-5874-9f34-8d9b2d936496",
+      "url": "https://www.nytimes.com/2024/05/29/opinion/marriage-sex-gender-divide.html",
+      "id": 100000009462484,
+      "asset_id": 100000009462484,
+      "source": "New York Times",
+      "published_date": "2024-05-29",
+      "updated": "2024-05-31 10:57:31",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "Marriages;Happiness;Polls and Public Opinion;Women and Girls;Men and Boys;Conservatism (US Politics);Women's Rights;Gender;Single Persons;Brookings Institution;United States",
+      "column": null,
+      "byline": "By Nicholas Kristof",
+      "type": "Article",
+      "title": "Less Marriage, Less Sex, Less Agreement",
+      "abstract": "Bonds between men and women may be eroding when we need them most.",
+      "des_facet": [
+        "Marriages",
+        "Happiness",
+        "Polls and Public Opinion",
+        "Women and Girls",
+        "Men and Boys",
+        "Conservatism (US Politics)",
+        "Women's Rights",
+        "Gender",
+        "Single Persons"
+      ],
+      "org_facet": ["Brookings Institution"],
+      "per_facet": [],
+      "geo_facet": ["United States"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Ferdinando Scianna/Magnum Photos",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/05/29/opinion/29kristof/29kristof-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/29/opinion/29kristof/29kristof-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/29/opinion/29kristof/29kristof-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/73db2b80-03a0-50b1-98e5-c7ed6d019f32",
+      "url": "https://www.nytimes.com/2024/05/31/realestate/race-home-buying-raven-baxter.html",
+      "id": 100000009480339,
+      "asset_id": 100000009480339,
+      "source": "New York Times",
+      "published_date": "2024-05-31",
+      "updated": "2024-05-31 23:17:36",
+      "section": "Real Estate",
+      "subsection": "",
+      "nytdsection": "real estate",
+      "adx_keywords": "Real Estate and Housing (Residential);Black People;Discrimination;Civil Rights and Liberties;Real Estate Brokers;Fair Housing Act (1968);National Fair Housing Alliance;Virginia Beach (Va)",
+      "column": null,
+      "byline": "By Debra Kamin",
+      "type": "Article",
+      "title": "She Made an Offer on a Condo. Then the Seller Learned She Was Black.",
+      "abstract": "A Black woman claims a white homeowner tried to pull out of a sale because of her race.",
+      "des_facet": [
+        "Real Estate and Housing (Residential)",
+        "Black People",
+        "Discrimination",
+        "Civil Rights and Liberties",
+        "Real Estate Brokers",
+        "Fair Housing Act (1968)"
+      ],
+      "org_facet": ["National Fair Housing Alliance"],
+      "per_facet": [],
+      "geo_facet": ["Virginia Beach (Va)"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Dr. Raven Baxter, a molecular biologist, was in escrow on a new home when she was told the seller didn’t want to hand over the keys to a Black person.",
+          "copyright": "Erin Schaff/The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/05/29/multimedia/00housesale-discrimination-lzjq/00housesale-discrimination-lzjq-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/29/multimedia/00housesale-discrimination-lzjq/00housesale-discrimination-lzjq-mediumThreeByTwo210-v2.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/29/multimedia/00housesale-discrimination-lzjq/00housesale-discrimination-lzjq-mediumThreeByTwo440-v2.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/ec17293e-658f-5ada-90a1-7de5a148cee0",
+      "url": "https://www.nytimes.com/2024/05/29/us/seattle-belltown-hellcat.html",
+      "id": 100000009482546,
+      "asset_id": 100000009482546,
+      "source": "New York Times",
+      "published_date": "2024-05-29",
+      "updated": "2024-05-30 23:50:58",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Automobiles;Noise;Traffic and Parking Violations;Speed Limits and Speeding;Social Media;Video Recordings, Downloads and Streaming;internal-truncator;Instagram Inc;Seattle (Wash)",
+      "column": null,
+      "byline": "By Mike Baker",
+      "type": "Article",
+      "title": "Sleepless in Seattle as a Hellcat Roars Through the Streets",
+      "abstract": "The modified Dodge Charger roaming Seattle’s downtown by night has infuriated residents. But it seems no one can stop it.",
+      "des_facet": [
+        "Automobiles",
+        "Noise",
+        "Traffic and Parking Violations",
+        "Speed Limits and Speeding",
+        "Social Media",
+        "Video Recordings, Downloads and Streaming",
+        "internal-truncator"
+      ],
+      "org_facet": ["Instagram Inc"],
+      "per_facet": [],
+      "geo_facet": ["Seattle (Wash)"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "City leaders and police officers have responded to complaints about the renegade driver with warnings, citations, criminal charges and a lawsuit.",
+          "copyright": "Brian Lau for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/05/25/multimedia/25nat-hellcat-01-cvkp/25nat-hellcat-01-cvkp-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/25/multimedia/25nat-hellcat-01-cvkp/25nat-hellcat-01-cvkp-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/25/multimedia/25nat-hellcat-01-cvkp/25nat-hellcat-01-cvkp-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/41ef7860-8b4e-5c28-bdb5-5d12e584abfc",
+      "url": "https://www.nytimes.com/2024/05/29/opinion/dna-rna-modern-science.html",
+      "id": 100000009481044,
+      "asset_id": 100000009481044,
+      "source": "New York Times",
+      "published_date": "2024-05-29",
+      "updated": "2024-06-01 17:02:00",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "RNA (Ribonucleic Acid);Research;Genetics and Heredity;Human Genome Project;DNA (Deoxyribonucleic Acid);Science and Technology",
+      "column": null,
+      "byline": "By Thomas Cech",
+      "type": "Article",
+      "title": "The Long-Overlooked Molecule That Will Define a Generation of Science",
+      "abstract": "These tiny biological powerhouses can help us cure deadly diseases, and tell us how life itself started.",
+      "des_facet": [
+        "RNA (Ribonucleic Acid)",
+        "Research",
+        "Genetics and Heredity",
+        "Human Genome Project",
+        "DNA (Deoxyribonucleic Acid)",
+        "Science and Technology"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Iris Wildros",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/autossell/RNA-F1-STILL-1_iris-wildros/RNA-F1-STILL-1_iris-wildros-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/autossell/RNA-F1-STILL-1_iris-wildros/RNA-F1-STILL-1_iris-wildros-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/autossell/RNA-F1-STILL-1_iris-wildros/RNA-F1-STILL-1_iris-wildros-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/a3709974-3888-52a9-8bfb-a9494bdb7f3f",
+      "url": "https://www.nytimes.com/2024/05/31/dining/how-to-cook-steak.html",
+      "id": 100000009456572,
+      "asset_id": 100000009456572,
+      "source": "New York Times",
+      "published_date": "2024-05-31",
+      "updated": "2024-05-31 12:38:13",
+      "section": "Food",
+      "subsection": "",
+      "nytdsection": "food",
+      "adx_keywords": "Cooking and Cookbooks;Content Type: Service;Butter;Recipes;Meat;Asparagus;Chefs",
+      "column": null,
+      "byline": "By Eric Kim",
+      "type": "Article",
+      "title": "Learn to Make the Juiciest Steak With This Hot Restaurant Trick",
+      "abstract": "Basting your steaks with butter is the secret to perfectly cooked meat at home.",
+      "des_facet": [
+        "Cooking and Cookbooks",
+        "Content Type: Service",
+        "Butter",
+        "Recipes",
+        "Meat",
+        "Asparagus",
+        "Chefs"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Butter basting your steak helps yield an even, rosy pink interior, juicy and full of promise.",
+          "copyright": "David Malosh for The New York Times. Food Stylist: Simon Andrews.",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/06/05/multimedia/31Butter-Steak2-gwch/31Butter-Steak2-gwch-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/05/multimedia/31Butter-Steak2-gwch/31Butter-Steak2-gwch-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/05/multimedia/31Butter-Steak2-gwch/31Butter-Steak2-gwch-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/c0b504c3-8adf-5a94-b963-afd38411f9ef",
+      "url": "https://www.nytimes.com/2024/05/29/realestate/perennials-edible.html",
+      "id": 100000009479909,
+      "asset_id": 100000009479909,
+      "source": "New York Times",
+      "published_date": "2024-05-29",
+      "updated": "2024-05-29 05:02:10",
+      "section": "Real Estate",
+      "subsection": "",
+      "nytdsection": "real estate",
+      "adx_keywords": "Real Estate and Housing (Residential);Gardens and Gardening;Flowers and Plants;Vegetables;Cooking and Cookbooks;Spring (Season);Content Type: Service",
+      "column": null,
+      "byline": "By Margaret Roach",
+      "type": "Article",
+      "title": "Treat Your Palate and Feast Your Eyes on These Perennials",
+      "abstract": "The author of “The Heirloom Gardener” offers tips for growing a garden of lush perennials you can put in a soup or add to a salad.",
+      "des_facet": [
+        "Real Estate and Housing (Residential)",
+        "Gardens and Gardening",
+        "Flowers and Plants",
+        "Vegetables",
+        "Cooking and Cookbooks",
+        "Spring (Season)",
+        "Content Type: Service"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A salad of sorrel, sweet cicely and dandelion greens garnished with violas is part of the spring harvest from the perennial edible-filled garden of John Forti, a horticulturist, garden historian and ethnobotanist.",
+          "copyright": "John Forti",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/05/28/realestate/29garden01/oakImage-1716907691104-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/28/realestate/29garden01/oakImage-1716907691104-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/28/realestate/29garden01/oakImage-1716907691104-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/b665a23a-434b-5f83-8367-185638f14be1",
+      "url": "https://www.nytimes.com/2024/05/28/opinion/trump-civility-society.html",
+      "id": 100000009490588,
+      "asset_id": 100000009490588,
+      "source": "New York Times",
+      "published_date": "2024-05-28",
+      "updated": "2024-05-31 21:15:20",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "Federal Criminal Case Against Trump (Documents Case);Presidential Election of 2024;United States Politics and Government;Trump, Donald J;United States",
+      "column": null,
+      "byline": "By Thomas L. Friedman",
+      "type": "Article",
+      "title": "How We’ve Lost Our Moorings as a Society",
+      "abstract": "Our society is losing sight of qualities that kept America strong, like responsibility and civility but also the capacity to feel shame.",
+      "des_facet": [
+        "Federal Criminal Case Against Trump (Documents Case)",
+        "Presidential Election of 2024",
+        "United States Politics and Government"
+      ],
+      "org_facet": [],
+      "per_facet": ["Trump, Donald J"],
+      "geo_facet": ["United States"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Gabriella Angotti-Jones for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/06/01/multimedia/28friedman-glqj/28friedman-glqj-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/01/multimedia/28friedman-glqj/28friedman-glqj-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/01/multimedia/28friedman-glqj/28friedman-glqj-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/7ad64b56-f989-5cae-8f43-d1b5ebba8c3b",
+      "url": "https://www.nytimes.com/2024/05/23/well/live/gardening-health-benefits.html",
+      "id": 100000009439145,
+      "asset_id": 100000009439145,
+      "source": "New York Times",
+      "published_date": "2024-05-23",
+      "updated": "2024-05-26 14:55:16",
+      "section": "Well",
+      "subsection": "Live",
+      "nytdsection": "well",
+      "adx_keywords": "Gardens and Gardening;Exercise;Mental Health and Disorders;Loneliness;Anxiety and Stress;Content Type: Service",
+      "column": null,
+      "byline": "By Dana G. Smith",
+      "type": "Article",
+      "title": "Why Gardening Is So Good for You",
+      "abstract": "Digging holes can be a workout and mood booster all rolled into one.",
+      "des_facet": [
+        "Gardens and Gardening",
+        "Exercise",
+        "Mental Health and Disorders",
+        "Loneliness",
+        "Anxiety and Stress",
+        "Content Type: Service"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Gardening can provide people with a sense of meaning and purpose. “When you’re working with plants, you’re the nurturer,” said Emilee Weaver, the program manager of therapeutic horticulture at the North Carolina Botanical Garden.",
+          "copyright": "Jasmine Clarke for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/05/22/multimedia/GARDENING-HEALTH-BENEFITS8-ztwg/GARDENING-HEALTH-BENEFITS8-ztwg-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/22/multimedia/GARDENING-HEALTH-BENEFITS8-ztwg/GARDENING-HEALTH-BENEFITS8-ztwg-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/22/multimedia/GARDENING-HEALTH-BENEFITS8-ztwg/GARDENING-HEALTH-BENEFITS8-ztwg-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/54e9aa73-f51e-553f-9185-83029d392516",
+      "url": "https://www.nytimes.com/2024/06/01/opinion/israel-gaza-antisemitism.html",
+      "id": 100000009496147,
+      "asset_id": 100000009496147,
+      "source": "New York Times",
+      "published_date": "2024-06-01",
+      "updated": "2024-06-02 12:57:30",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "Israel-Gaza War (2023- );Defense and Military Forces;Palestinians;Civilian Casualties;Humanitarian Aid;Terrorism;International Relations;Pro-Palestinian Campus Protests (2023- );Hamas;Israel;Gaza Strip",
+      "column": null,
+      "byline": "By Nicholas Kristof",
+      "type": "Article",
+      "title": "How to Think Through the Moral Tangle in Gaza",
+      "abstract": "It’s not a black-and-white morality tale.",
+      "des_facet": [
+        "Israel-Gaza War (2023- )",
+        "Defense and Military Forces",
+        "Palestinians",
+        "Civilian Casualties",
+        "Humanitarian Aid",
+        "Terrorism",
+        "International Relations",
+        "Pro-Palestinian Campus Protests (2023- )"
+      ],
+      "org_facet": ["Hamas"],
+      "per_facet": [],
+      "geo_facet": ["Israel", "Gaza Strip"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Michael Reynolds/EPA, via Shutterstock",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/01kristofNEW-zkqc/01kristofNEW-zkqc-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/01kristofNEW-zkqc/01kristofNEW-zkqc-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/01kristofNEW-zkqc/01kristofNEW-zkqc-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/2164b117-40b7-5106-99c6-417577dbebb8",
+      "url": "https://www.nytimes.com/2024/05/28/climate/pfas-forever-chemicals-industry-lawsuits.html",
+      "id": 100000009481078,
+      "asset_id": 100000009481078,
+      "source": "New York Times",
+      "published_date": "2024-05-28",
+      "updated": "2024-05-28 23:57:58",
+      "section": "Climate",
+      "subsection": "",
+      "nytdsection": "climate",
+      "adx_keywords": "PFAS (Per- and Polyfluoroalkyl Substances);Suits and Litigation (Civil);Plastics;Hazardous and Toxic Substances;Water Pollution;Water;Environment;Pollution;Liver Cancer;Thyroid Cancer;3M Company;Chemours Company;DuPont Co;Environmental Protection Agency;Wolverine World Wide Inc",
+      "column": null,
+      "byline": "By Hiroko Tabuchi",
+      "type": "Article",
+      "title": "Lawyers to Plastics Makers: Prepare for ‘Astronomical’ PFAS Lawsuits",
+      "abstract": "At an industry presentation about dangerous “forever chemicals,” lawyers predicted a wave of lawsuits that could dwarf asbestos litigation, audio from the event revealed.",
+      "des_facet": [
+        "PFAS (Per- and Polyfluoroalkyl Substances)",
+        "Suits and Litigation (Civil)",
+        "Plastics",
+        "Hazardous and Toxic Substances",
+        "Water Pollution",
+        "Water",
+        "Environment",
+        "Pollution",
+        "Liver Cancer",
+        "Thyroid Cancer"
+      ],
+      "org_facet": [
+        "3M Company",
+        "Chemours Company",
+        "DuPont Co",
+        "Environmental Protection Agency",
+        "Wolverine World Wide Inc"
+      ],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A 3M plant on the Mississippi River. The company has faced legal action over manufacturing the chemicals.",
+          "copyright": "E. Jason Wambsgans/Chicago Tribune, via Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/05/23/multimedia/00CLI-PFAS-01-ftqc/00CLI-PFAS-01-ftqc-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/23/multimedia/00CLI-PFAS-01-ftqc/00CLI-PFAS-01-ftqc-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/23/multimedia/00CLI-PFAS-01-ftqc/00CLI-PFAS-01-ftqc-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/9b2123fb-1aef-52b9-8060-14087200d57c",
+      "url": "https://www.nytimes.com/2024/05/30/opinion/trump-trial-guilty-felony.html",
+      "id": 100000009473207,
+      "asset_id": 100000009473207,
+      "source": "New York Times",
+      "published_date": "2024-05-30",
+      "updated": "2024-06-01 16:59:00",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "New York State Criminal Case Against Trump (71543-23);Frauds and Swindling;Presidential Election of 2016;Jury System;Decisions and Verdicts;United States Politics and Government;Trump, Donald J;Merchan, Juan M",
+      "column": null,
+      "byline": "By The Editorial Board",
+      "type": "Article",
+      "title": "Donald Trump, Felon",
+      "abstract": "The former president’s conviction in a New York criminal trial revealed, yet again, why he is unfit for office.",
+      "des_facet": [
+        "New York State Criminal Case Against Trump (71543-23)",
+        "Frauds and Swindling",
+        "Presidential Election of 2016",
+        "Jury System",
+        "Decisions and Verdicts",
+        "United States Politics and Government"
+      ],
+      "org_facet": [],
+      "per_facet": ["Trump, Donald J", "Merchan, Juan M"],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Illustration by Rebecca Chew/The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/06/01/opinion/00trump-trial-convict/00trump-trial-convict-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/01/opinion/00trump-trial-convict/00trump-trial-convict-mediumThreeByTwo210-v2.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/01/opinion/00trump-trial-convict/00trump-trial-convict-mediumThreeByTwo440-v2.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/93f01b51-4b17-5f4c-bd03-58852d3bac04",
+      "url": "https://www.nytimes.com/2024/05/30/opinion/trump-guilty-verdict-defense.html",
+      "id": 100000009495094,
+      "asset_id": 100000009495094,
+      "source": "New York Times",
+      "published_date": "2024-05-30",
+      "updated": "2024-06-01 16:59:37",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "New York State Criminal Case Against Trump (71543-23);Frauds and Swindling;Decisions and Verdicts;Presidential Election of 2024;United States Politics and Government;Polls and Public Opinion;internal-sub-only-nl;Trump, Donald J;Biden, Joseph R Jr;Republican Party",
+      "column": null,
+      "byline": "By Frank Bruni",
+      "type": "Article",
+      "title": "Trump’s Guilty Verdict May Be a Political Accelerant",
+      "abstract": "He has spent much of his lifetime and all of his political career preparing for a chapter like this.",
+      "des_facet": [
+        "New York State Criminal Case Against Trump (71543-23)",
+        "Frauds and Swindling",
+        "Decisions and Verdicts",
+        "Presidential Election of 2024",
+        "United States Politics and Government",
+        "Polls and Public Opinion",
+        "internal-sub-only-nl"
+      ],
+      "org_facet": ["Republican Party"],
+      "per_facet": ["Trump, Donald J", "Biden, Joseph R Jr"],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Damon Winter/The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/31bruni2-hvpq/31bruni2-hvpq-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/31bruni2-hvpq/31bruni2-hvpq-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/31bruni2-hvpq/31bruni2-hvpq-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/ea7bcbc0-b998-53d9-8c2c-7d2073200b3d",
+      "url": "https://www.nytimes.com/2024/05/30/arts/music/sarah-mclachlan-fumbling-towards-ecstasy-anniversary.html",
+      "id": 100000009397818,
+      "asset_id": 100000009397818,
+      "source": "New York Times",
+      "published_date": "2024-05-30",
+      "updated": "2024-05-31 14:05:51",
+      "section": "Arts",
+      "subsection": "Music",
+      "nytdsection": "arts",
+      "adx_keywords": "Content Type: Personal Profile;Pop and Rock Music;internal-truncator;McLachlan, Sarah;Lilith Fair",
+      "column": null,
+      "byline": "By Grayson Haver Currin",
+      "type": "Article",
+      "title": "Sarah McLachlan Is Resurfacing",
+      "abstract": "The Canadian songwriter became a superstar through a series of defiant decisions. After slowing down to be a single mother, she has returned to the stage and studio.",
+      "des_facet": [
+        "Content Type: Personal Profile",
+        "Pop and Rock Music",
+        "internal-truncator"
+      ],
+      "org_facet": ["Lilith Fair"],
+      "per_facet": ["McLachlan, Sarah"],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Sarah McLachlan is on tour celebrating “Fumbling Towards Ecstasy,” the 1993 album that turned her into an avatar for the sensitive, mysterious singer-songwriters of ’90s radio. ",
+          "copyright": "Alana Paterson for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/09MCLACHLAN-02-qgvp/09MCLACHLAN-02-qgvp-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/09MCLACHLAN-02-qgvp/09MCLACHLAN-02-qgvp-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/09MCLACHLAN-02-qgvp/09MCLACHLAN-02-qgvp-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/4497df88-644e-54f7-bcf1-c5dfafb97c9b",
+      "url": "https://www.nytimes.com/2024/05/29/arts/dance/mira-nadon-new-york-city-ballet.html",
+      "id": 100000009482758,
+      "asset_id": 100000009482758,
+      "source": "New York Times",
+      "published_date": "2024-05-29",
+      "updated": "2024-05-30 14:52:20",
+      "section": "Arts",
+      "subsection": "Dance",
+      "nytdsection": "arts",
+      "adx_keywords": "Dancing;Content Type: Personal Profile;Nadon, Mira;New York City Ballet;School of American Ballet",
+      "column": null,
+      "byline": "By Gia Kourlas",
+      "type": "Article",
+      "title": "At City Ballet, a Once-in-a-Generation Dancer Arrives",
+      "abstract": "Mira Nadon, the rising New York City Ballet principal, is coming off her best season yet. And it’s only the beginning.",
+      "des_facet": ["Dancing", "Content Type: Personal Profile"],
+      "org_facet": ["New York City Ballet", "School of American Ballet"],
+      "per_facet": ["Nadon, Mira"],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Mira Nadon’s versatility and artistry were on display this season at New York City Ballet, where she is a principal dancer.",
+          "copyright": "Sabrina Santiago for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/05/30/multimedia/29MIRA-NADON-02-wzhj/29MIRA-NADON-02-wzhj-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/30/multimedia/29MIRA-NADON-02-wzhj/29MIRA-NADON-02-wzhj-mediumThreeByTwo210-v2.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/30/multimedia/29MIRA-NADON-02-wzhj/29MIRA-NADON-02-wzhj-mediumThreeByTwo440-v2.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/ad791e0e-24bb-510b-bcb0-31161111c0a1",
+      "url": "https://www.nytimes.com/2024/05/28/well/move/low-impact-hiit-exercise.html",
+      "id": 100000009441189,
+      "asset_id": 100000009441189,
+      "source": "New York Times",
+      "published_date": "2024-05-28",
+      "updated": "2024-06-02 14:39:24",
+      "section": "Well",
+      "subsection": "Move",
+      "nytdsection": "well",
+      "adx_keywords": "Exercise;Content Type: Service;Heart;Joints (Body Part);Blood Pressure;Habits and Routines (Behavior)",
+      "column": null,
+      "byline": "By Jen Murphy",
+      "type": "Article",
+      "title": "A 20-Minute Intense Workout That’s Easy on Your Joints",
+      "abstract": "HIIT routines are typically both high intensity and high impact. But you can still get the hard work while being easy on your body.",
+      "des_facet": [
+        "Exercise",
+        "Content Type: Service",
+        "Heart",
+        "Joints (Body Part)",
+        "Blood Pressure",
+        "Habits and Routines (Behavior)"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "You can substitute high-impact activities such as sprinting, burpees or jump lunges with joint-friendly alternatives.",
+          "copyright": "Gritchelle Fallesgon for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/05/28/multimedia/23LOW-IMPACT-HIIT1-pqzl/23LOW-IMPACT-HIIT1-pqzl-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/28/multimedia/23LOW-IMPACT-HIIT1-pqzl/23LOW-IMPACT-HIIT1-pqzl-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/28/multimedia/23LOW-IMPACT-HIIT1-pqzl/23LOW-IMPACT-HIIT1-pqzl-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/33ec971a-5363-54b9-b500-3e6a33d9acfa",
+      "url": "https://www.nytimes.com/2024/06/01/opinion/donald-trump-trial.html",
+      "id": 100000009498666,
+      "asset_id": 100000009498666,
+      "source": "New York Times",
+      "published_date": "2024-06-01",
+      "updated": "2024-06-01 16:59:55",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "New York State Criminal Case Against Trump (71543-23);Frauds and Swindling;Decisions and Verdicts;Presidential Election of 2024;United States Politics and Government;Polls and Public Opinion;Trump, Donald J;Biden, Joseph R Jr;Republican Party",
+      "column": null,
+      "byline": "By Maureen Dowd",
+      "type": "Article",
+      "title": "Holy Cow, 34 for 45!",
+      "abstract": "But the real verdict comes on 11/5.",
+      "des_facet": [
+        "New York State Criminal Case Against Trump (71543-23)",
+        "Frauds and Swindling",
+        "Decisions and Verdicts",
+        "Presidential Election of 2024",
+        "United States Politics and Government",
+        "Polls and Public Opinion"
+      ],
+      "org_facet": ["Republican Party"],
+      "per_facet": ["Trump, Donald J", "Biden, Joseph R Jr"],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Spencer Platt/Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/01dowd-wjmt/01dowd-wjmt-thumbStandard-v2.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/01dowd-wjmt/01dowd-wjmt-mediumThreeByTwo210-v2.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/02/multimedia/01dowd-wjmt/01dowd-wjmt-mediumThreeByTwo440-v2.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/21215bea-0b18-5e90-b247-a80cd6307951",
+      "url": "https://www.nytimes.com/2024/05/28/well/eat/shrimp-prawns-health-risks-benefits.html",
+      "id": 100000009439174,
+      "asset_id": 100000009439174,
+      "source": "New York Times",
+      "published_date": "2024-05-28",
+      "updated": "2024-05-31 13:45:48",
+      "section": "Well",
+      "subsection": "Eat",
+      "nytdsection": "well",
+      "adx_keywords": "Shrimp;Seafood;Water Pollution;Diet and Nutrition;Fish Farming;Hazardous and Toxic Substances;Content Type: Service;Oceans and Seas;Fishing, Commercial;Environment;internal-truncator",
+      "column": null,
+      "byline": "By Erik Vance",
+      "type": "Article",
+      "title": "Is Shrimp Good for You? It’s Complicated.",
+      "abstract": "Americans love their prawns. So how healthy are they — for us and for the planet?",
+      "des_facet": [
+        "Shrimp",
+        "Seafood",
+        "Water Pollution",
+        "Diet and Nutrition",
+        "Fish Farming",
+        "Hazardous and Toxic Substances",
+        "Content Type: Service",
+        "Oceans and Seas",
+        "Fishing, Commercial",
+        "Environment",
+        "internal-truncator"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Yasu & Junko/Trunk Archive",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/06/04/well/WELL-SHRIMP2/WELL-SHRIMP2-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/04/well/WELL-SHRIMP2/WELL-SHRIMP2-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/06/04/well/WELL-SHRIMP2/WELL-SHRIMP2-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/1b98da89-741d-5440-a0db-3ba50254bae1",
+      "url": "https://www.nytimes.com/2024/05/29/travel/pantelleria-italy-island.html",
+      "id": 100000009094121,
+      "asset_id": 100000009094121,
+      "source": "New York Times",
+      "published_date": "2024-05-29",
+      "updated": "2024-05-30 15:59:34",
+      "section": "Travel",
+      "subsection": "",
+      "nytdsection": "travel",
+      "adx_keywords": "Travel and Vacations;Wines;Swimming;Hot Springs;Hikes and Hiking;Islands;internal-truncator;Pantelleria (Italy)",
+      "column": null,
+      "byline": "By Amy Tara Koch and Paolo Pellegrin",
+      "type": "Article",
+      "title": "So Close to Sicily, So Far From the Crowds",
+      "abstract": "Pantelleria is a seductive idyll of mud baths, romantic ruins and secluded swimming coves. It’s also rocky and wind-whipped, making it quieter than its big-sister island next door.",
+      "des_facet": [
+        "Travel and Vacations",
+        "Wines",
+        "Swimming",
+        "Hot Springs",
+        "Hikes and Hiking",
+        "Islands",
+        "internal-truncator"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": ["Pantelleria (Italy)"],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Visitors can get close to the rock formation known as Arco dell’Elefante, a lava arch that resembles an elephant drinking water, when touring Pantelleria by boat. ",
+          "copyright": "",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/05/22/multimedia/00-pantelleria-sicily-ftkv/00-pantelleria-sicily-ftkv-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/22/multimedia/00-pantelleria-sicily-ftkv/00-pantelleria-sicily-ftkv-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/22/multimedia/00-pantelleria-sicily-ftkv/00-pantelleria-sicily-ftkv-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/a8f3bb29-2350-5d6e-8ba8-2352cc7b4d22",
+      "url": "https://www.nytimes.com/2024/05/30/business/navient-private-student-loan-debt.html",
+      "id": 100000009493859,
+      "asset_id": 100000009493859,
+      "source": "New York Times",
+      "published_date": "2024-05-30",
+      "updated": "2024-05-31 12:32:51",
+      "section": "Business",
+      "subsection": "",
+      "nytdsection": "business",
+      "adx_keywords": "Student Loans;For-Profit Schools;Colleges and Universities;Regulation and Deregulation of Industry;United States Politics and Government;internal-truncator;Warren, Elizabeth;Education Department (US);Navient Corporation;Senate",
+      "column": null,
+      "byline": "By Stacy Cowley",
+      "type": "Article",
+      "title": "There’s a Program to Cancel Private Student Debt. Most Don’t Know About It.",
+      "abstract": "A nonprofit group is publicizing the relief program that Navient, a large lender, created for students who attended for-profit schools that misled them.",
+      "des_facet": [
+        "Student Loans",
+        "For-Profit Schools",
+        "Colleges and Universities",
+        "Regulation and Deregulation of Industry",
+        "United States Politics and Government",
+        "internal-truncator"
+      ],
+      "org_facet": [
+        "Education Department (US)",
+        "Navient Corporation",
+        "Senate"
+      ],
+      "per_facet": ["Warren, Elizabeth"],
+      "geo_facet": [],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Danielle Maynard took both federal and private loans to attend the New England Institute of Art.",
+          "copyright": "Simon Simard for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2024/05/30/multimedia/30navient-01-wzfb/30navient-01-wzfb-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/30/multimedia/30navient-01-wzfb/30navient-01-wzfb-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2024/05/30/multimedia/30navient-01-wzfb/30navient-01-wzfb-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/887fc7f1-7da7-5d89-a87d-82240d6c0f13",
+      "url": "https://www.nytimes.com/2024/05/28/opinion/ellis-island-immigration.html",
+      "id": 100000009295600,
+      "asset_id": 100000009295600,
+      "source": "New York Times",
+      "published_date": "2024-05-28",
+      "updated": "2024-05-28 16:38:38",
+      "section": "Opinion",
+      "subsection": "",
+      "nytdsection": "opinion",
+      "adx_keywords": "Documentary Films and Programs;Immigration and Emigration;Ellis Island (NYC)",
+      "column": null,
+      "byline": "By Phil Buehler and Steve Siegel",
+      "type": "Article",
+      "title": "In 1974, Two Film Students Rowed to Ellis Island. Here’s What They Captured.",
+      "abstract": "In the early 1970s, two high school filmmakers ventured out in a rowboat to make a 16 mm film about an abandoned space nearby: Ellis Island.",
+      "des_facet": [
+        "Documentary Films and Programs",
+        "Immigration and Emigration"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": ["Ellis Island (NYC)"],
+      "media": [],
+      "eta_id": 0
+    }
+  ]
+}
