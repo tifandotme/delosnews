@@ -76,6 +76,12 @@ export function OwnershipCard({ article }: OwnershipCardProps) {
         : <BuyButton
             price={price}
             onConfirm={() => {
+              if (purchasedArticles.length > 5 && price === 0) {
+                toast(
+                  "Free articles only available if you have less than 6 purchased articles.",
+                )
+                return
+              }
               updateCoins(-price)
               addPurchasedArticles(article)
               if (price >= 50000) {
@@ -105,10 +111,8 @@ interface BuyButtonProps {
 }
 
 function BuyButton({ price, onConfirm }: BuyButtonProps) {
-  const { purchasedArticles } = useStore((state) => state)
-
-  const isDisabled = purchasedArticles.length > 5 && price === 0
-
+  const { coins } = useStore((state) => state)
+  const isInsufficientCoins = coins < price
   return (
     <>
       {price === 0 ?
@@ -118,7 +122,7 @@ function BuyButton({ price, onConfirm }: BuyButtonProps) {
       : <FormatCoins amount={price} className="text-sm" />}
       <AlertDialog>
         <AlertDialogTrigger asChild>
-          <Button disabled={isDisabled}>Buy Article</Button>
+          <Button disabled={isInsufficientCoins}>Buy Article</Button>
         </AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>
